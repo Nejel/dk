@@ -9,5 +9,5 @@ COPY ${APP_DIR} ${APP_PATH}
 
 WORKDIR ${APP_PATH}
 
-RUN pip3 install -r requirements.txt && pip3 install --no-cache
+RUN pip3 install -r requirements.txt
 ENTRYPOINT ["python3", "app.py"]
